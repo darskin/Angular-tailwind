@@ -8,7 +8,7 @@ import { OrderData } from '../components/order-modal/order-modal.component';
   providedIn: 'root'
 })
 export class OrderService {
-  private apiUrl = 'http://localhost:3000/orders';
+  private apiUrl = 'https://671bf7812c842d92c381e25f.mockapi.io/api/v1/orders';
   private ordersSubject = new BehaviorSubject<OrderData[]>([]);
   orders$ = this.ordersSubject.asObservable();
 
