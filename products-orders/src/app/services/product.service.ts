@@ -8,7 +8,7 @@ import { ProductData } from '../components/product-modal/product-modal.component
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'http://localhost:3000/products';
+  private apiUrl = 'https://671bf7812c842d92c381e25f.mockapi.io/api/v1/products';
   private productsSubject = new BehaviorSubject<ProductData[]>([]);
   products$ = this.productsSubject.asObservable();
 
