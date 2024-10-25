@@ -24,23 +24,19 @@ export class ProductModalComponent {
     public dialogRef: MatDialogRef<ProductModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data:{type:string, product:ProductData}
     
-  ) {
-    console.log("dataa",data)
-  }
+  ) {}
 
   onNoClick(): void {
     this.dialogRef.close();
   }
 
   onSubmit(): void {
-    // Lógica para guardar o editar el productoc
-    console.log("resultado de cefrrado", this.data)
+    // Lógica para guardar o editar el producto
     this.dialogRef.close(this.data);
   }
 
   deleteProduct(): void {
     // Lógica para eliminar el producto
-    console.log('Producto eliminado:', this.data.product);
     this.dialogRef.close(this.data);
   }
 }
