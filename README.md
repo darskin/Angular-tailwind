@@ -42,3 +42,8 @@ bash docker-compose up --build
 - **src/**: Contiene el código fuente de la aplicación Angular.
 - **Dockerfile**: Define cómo se construye la imagen Docker de la aplicación.
 - **docker-compose.yml**: Configura los servicios Docker para la aplicación.
+
+
+link en Netlify
+
+https://test-angular-link.netlify.app
